@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      SocialCops - Challenge Task!
+    </title>
+    <link href="{{url_for('static', filename='css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{url_for('static', filename='css/stylesheet.css')}}" rel="stylesheet">
+  </head>
+  <body>
+    <div class="bg-grad"> </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <div class = "welcome-div">
+          <h1>H E L L O!</h1>
+          <p> The aim is to create an api which can do object detection.
+              To achieve this, I've used YOLOv3 (You Only Look Once), which is the most famous algorithm to do SSD.
+          </p>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-6">
+          {% block form %}
+          <form enctype="multipart/form-data" method="post">
+            <div class="form-group">
+              <label for="file_input"> Image input</label>
+              <input type="file" name="file_input" />
+            </div>
+
+              <label for="yolo">
+                <input type="radio" name="algo" value=0 checked> Tiny YOLOv3 </br>
+              </label>
+              <label for="tiny_yolo">
+                <input type="radio" name="algo" value=1> YOLOv3 </br>
+              </label>
+            <button type="submit" name="button"> Detect! </button>
+          </form>
+          {% endblock %}
+          </div>
+      </div>
+      <div class="row footer">
+        <div class="col-6">
+        Candidate: Prakhar Srivatava <a href="http://prsr.me">Web</a> | <a href="https://github.com/prakharcode">Github</a>
+        </div>
+        <div class="col-6">
+          Paper used: <a href="https://arxiv.org/pdf/1506.02640.pdf">YOLO</a> | <a href="https://arxiv.org/pdf/1804.02767.pdf">YOLOv3</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
