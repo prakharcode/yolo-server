@@ -13,6 +13,7 @@ class YOLO:
         """
         self._t1 = class_threshold
         self._t2 = nms_threshold
+        K.clear_session()
         self._yolo = load_model(algo)
     def _sigmoid(self,x):
         return 1 / (1 + np.exp(-x))
