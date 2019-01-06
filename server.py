@@ -6,6 +6,7 @@ from utils import detect_image
 import base64
 import cv2
 import numpy as np
+import keras.backend as K
 up_loc = os.path.join('static','uploads')
 res_loc = os.path.join('static','result')
 UPLOAD_FOLDER = os.path.join(os.getcwd(), up_loc)
@@ -23,9 +24,9 @@ def allowed_file(filename):
 
 @app.route('/', methods=['GET', 'POST'])
 def hello():
+    K.clear_session()
     if request.method == 'POST':
         algo = request.form['algo']
-        print(algo)
         if 'file_input' not in request.files:
             flash('No file part')
             return redirect(request.url)

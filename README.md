@@ -23,7 +23,7 @@ virtualenv venv
 
 4. Install the requirements
 ```bash
-pip install -r requirements.tex
+pip install -r requirements.txt
 ```
 
 5. Download and convert the weights for yolov3 and yolov3-tiny
