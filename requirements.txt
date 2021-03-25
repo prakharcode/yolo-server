@@ -23,7 +23,7 @@ numpy==1.15.4
 opencv-python==3.4.3.18
 protobuf==3.6.1
 pytz==2018.7
-PyYAML==3.13
+PyYAML==5.4
 requests==2.20.1
 scipy==1.1.0
 six==1.11.0
