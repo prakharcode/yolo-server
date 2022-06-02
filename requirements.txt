@@ -10,7 +10,7 @@ Flask-RESTful==0.3.6
 gast==0.2.0
 grpcio==1.16.0
 h5py==2.8.0
-html5lib==0.9999999
+html5lib==0.99999999
 idna==2.7
 itsdangerous==1.1.0
 Jinja2==2.10
