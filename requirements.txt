@@ -21,7 +21,7 @@ Markdown==3.0.1
 MarkupSafe==1.1.0
 numpy==1.15.4
 opencv-python==3.4.3.18
-protobuf==3.6.1
+protobuf==3.18.3
 pytz==2018.7
 PyYAML==3.13
 requests==2.20.1
